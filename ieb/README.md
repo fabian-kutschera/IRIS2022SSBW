@@ -7,4 +7,4 @@ Up until now, we have only plotted major tick marks. For example, if we want a p
 
 Since we are plotting the Y-axis (Frequency) in logarithmic units, there are certain numbers to use for the ticks. Ticks must be 1, 2, or 3. Ticks will then occur at 1, 1-2-5, or 1,2,3,4,…,9, respectively, for each magnitude range. For the frequency-magnitude plot in this question, we want an X-axis labeled Magnitude showing a major tick every 1 unit with a minor tick every 0.2 units, and we want  a Y-axis labeled Frequency of Earthquakes with a tick every 1 unit of magnitude with a minor tick every 0.1 times powers of 10 (i.e., 1,2,3,4,…,9).
 
-Solution: ``
+Solution: `gmt psxy cali.xy -R3/8/.005/500 -JX6/6l -Ba1f0.2:"Magnitude":/a1f3:"Frequency of Earthquakes": >! cali.ps`
