@@ -1,0 +1,10 @@
+# IRIS DMC Tutorial 1: IRIS Earthquake Browser
+
+## Q15
+Once you have entered the magnitudes and rates per year from the previous questions into the cali.xy, I would like you to use them to make a logarithmic frequency-magnitude plot with GMT. This plot should have magnitude on the x-axis and frequency (earthquakes/year) on the y-axis. Magnitude is already in logarithmic units, but frequency is not, so we will need to tell GMT to plot the y-axis logarithmically by adding an "l" flag (lowercase L) to the frame options. You should make sure to include a border to be able to see the axes. 
+
+Up until now, we have only plotted major tick marks. For example, if we want a plot with an X-axis labeled Depth (km) on the bottom of our plot showing a tick every 100 units, and we would like a Y-axis labeled Magnitude on the left hand side of our plot with a tick every 2 units, we would use this option: -B100:"Depth (km)":/2:"Magnitude":SW. (review Q16 in Tutorial 8: GMT XY Plot for more on plotting border specifications). There is also the option to plot minor tick marks as well. Minor tick marks are tick marks without a number next to them. For this, you can use a and f to denote the spacing between major and minor tick marks, respectively. For the example above, let's say we instead want the X-axis to have a major tick every 100 units but also have a minor tick every 20 units and the Y-axis to have a major tick every 2 units but also have a minor tick every 0.5 units  - this is how we would set the border option: -Ba100f20:"Depth (km)":/a2f0.5:"Magnitude":SW
+
+Since we are plotting the Y-axis (Frequency) in logarithmic units, there are certain numbers to use for the ticks. Ticks must be 1, 2, or 3. Ticks will then occur at 1, 1-2-5, or 1,2,3,4,…,9, respectively, for each magnitude range. For the frequency-magnitude plot in this question, we want an X-axis labeled Magnitude showing a major tick every 1 unit with a minor tick every 0.2 units, and we want  a Y-axis labeled Frequency of Earthquakes with a tick every 1 unit of magnitude with a minor tick every 0.1 times powers of 10 (i.e., 1,2,3,4,…,9).
+
+Solution: ``
