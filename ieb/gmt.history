@@ -3,6 +3,6 @@ BEGIN GMT 6.3.0
 B	a1f0.2:Magnitude:/a1f3:Frequency of Earthquakes:SW
 J	X
 JX	X6/6l
-R	3/8/0.005/500
+R	3/8/0.001/500
 @L	1
 END
